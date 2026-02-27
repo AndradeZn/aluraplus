@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --cor-principal: #ffffff;
+    --cor-secundaria: #C0C0C0; 
+    --cor-botao: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal:'inter';
+    --botao-efeito: #e900af;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+} 
+
+.principal{
+    /*USE O BACKGROUND-IMAGE SÓ PARA DECORATIVA*/
+    background-image: url("Imagens/Background.png");
+    background-repeat: no-repeat; /*NÃO IRÁ REPETIR A IMAGEM*/
+    background-size: contain;
+    align-items: center; /*DEIXA O CONTEÚDO NO CENTRO*/
+    text-align: center;
+}
+
+.container{
+    height: 100vh; /*ALTURA DA IMAGEM DECORATIVA*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-principal)
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0; /**/
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao{
+   display: inline-block; 
+   margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.descricao__titulo{
+   font-size: 2em;
+   display: center;
+}
+
+.dispositivos__listas{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--cor-principal);
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto{
+    margin: 1em 0;
+    color: var(--cor-secundaria);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center; 
+    margin: 5em 3em;
+}
+
+.rodape__lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 5em 0;
+}
+ 
+
+/*PASSAR O MOUSE, VAI FICAR NA COR AZUL*/
+.lista__link a:hover {  
+     color: var(--cor-botao);
+}
+
+
+/*QUANDO APERTA NOS FOOTERS, VAI FICAR NA COR ROXA*/
+.lista__link a:active{ 
+    color: purple;
+}
+
+
+
+/*TODA VEZ QUE PASSAR O MOUSE POR CIMA DE UM BOTÃO, ELE MUDARA DE COR*/
+.container__botao:hover{
+    background-color: var(--botao-efeito);
+    color: var(--cor-fundo);
+}
